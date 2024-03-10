@@ -1,0 +1,29 @@
+.brand-text{
+    animation-name: slideInFromLeft;
+    animation-duration: 1s;
+}
+.brand-image{
+    animation-name: slideInFromRight;
+    animation-duration: 1s;
+}
+
+/* animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
