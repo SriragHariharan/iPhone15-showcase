@@ -6,6 +6,9 @@
     animation-name: slideInFromRight;
     animation-duration: 1s;
 }
+.iphone-grp{
+    animation: beat 5s infinite alternate;
+}
 
 /* animations */
 @keyframes slideInFromLeft {
@@ -25,5 +28,15 @@
 
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
     }
 }
